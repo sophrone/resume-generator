@@ -1,4 +1,3 @@
-// src/middlewares/authMiddleware.ts
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
@@ -11,11 +10,11 @@ export const authenticateJWT = (
   if (token) {
     // Verify the token
     jwt.verify(token, process.env.JWT_SECRET || "", (err, user) => {
-      if (err) return res.sendStatus(403); // Forbidden if token is invalid
-      req.user = user; // Attach user information to the request
-      next(); // Proceed to the next middleware or route handler
+      if (err) return res.sendStatus(403);
+      req.user = user;
+      next();
     });
   } else {
-    res.sendStatus(401); // Unauthorized if no token is provided
+    res.sendStatus(401);
   }
 };

@@ -1,4 +1,3 @@
-// src/models/user.ts
 import { pgTable, serial, varchar, text } from "drizzle-orm/pg-core";
 
 export const User = pgTable("users", {

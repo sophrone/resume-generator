@@ -1,4 +1,3 @@
-// src/controllers/cvController.ts
 import { Request, Response } from "express";
 import { generateCV } from "../utils/cvGenerator";
 

@@ -1,5 +1,3 @@
-// src/utils/cvGenerator.ts
-
 interface Profile {
   name: string;
   email: string;
