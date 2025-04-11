@@ -1,0 +1,29 @@
+# Node.js modules
+/node_modules/
+
+# Build output
+/dist/
+build/
+*.js
+*.js.map
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE and OS specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Test coverage
+coverage/
